@@ -9,7 +9,7 @@ public class IncomeTaxOverload {
 	      int taxToPay;
 	      int i;
 
-	      // Tables to use in the exercise are the same as in the TaxTableTools class
+	     
 	      int [] salaryRange = {   0,  20000, 50000, 100000,  Integer.MAX_VALUE };
 	      double [] taxRates = { 0.0,   0.20,  0.30,   0.45,               0.45 };
 
@@ -32,7 +32,7 @@ public class IncomeTaxOverload {
 	   } 
 	} 
 
-//TODO: rename to TaxTableTools
+
 class TaxTableTools {
 
 /** This class searches the 'search' table with a search argument and
@@ -55,8 +55,7 @@ public TaxTableTools() {
 
 // Overloaded constructor
 
-// FIXME: Add an overloaded constructor to load the search and value tables.
-// FIXME: Be sure to set the nEntries value, too.
+
 public TaxTableTools(int[] search, double[] value) {
 	this.nEntries = nEntries;
 	this.search = search;
