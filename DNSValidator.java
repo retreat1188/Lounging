@@ -11,7 +11,7 @@ public class DNSValidator {
 	      String searchName;
 	      String theTld;
 	      boolean isCoreGtld;
-	      // FIXME: Add variable periodCounter to count periods in a domain name
+	      
 	      int periodPosition;   // Position of the period in the domain name
 	      int i;
 	      int periodCounter;
@@ -30,7 +30,7 @@ public class DNSValidator {
 
 	      while (inputName.length() > 0) {
 	    	  searchName = inputName.toLowerCase();
-	         // FIXME: convert inputName to lowercase and assign to searchName. 
+	        
 	    	  
 	         isCoreGtld = false;
 	         
@@ -41,13 +41,7 @@ public class DNSValidator {
 	        	 }
 	         }
 	         
-	         // FIXME: Write a for loop using variable i to store in periodCounter
-	         //        the number of periods in searchName. Store the position of the 
-	         //        period in periodPosition. If searchName has exactly one period
-	         //        and searchName's first character is not a period, determine
-	         //        whether searchName has a valid core gTLD by extracting the
-	         //        domain name into variable coreGtld and comparing the name with 
-	         //        valid core gTLDs.
+	       
 	         
 	         System.out.println(periodCounter+""+periodPosition);
 	         if(periodCounter == 1 && periodPosition != 0) {
@@ -55,10 +49,7 @@ public class DNSValidator {
 	        	 System.out.println(theTld);
 	         }
 
-	         // Extract the top-level domain name starting at the period's position.
-	         // Ex: If searchName = "example.com", the next statement extracts ".com"
-	         
-	         // FIXME: use of substring of searchName with periodPosition and assign to theTld
+	        
 	   
 	         if (theTld.equals(coreGtld1)) {
 	            isCoreGtld = true;
