@@ -24,12 +24,10 @@ public class IncomeTaxClass {
 	      int []    salary   = {   0,  20000, 50000, 100000, Integer.MAX_VALUE };
 	      double [] taxTable = { 0.0,   0.15,  0.25,   0.35,              0.40 };
 
-	      // FIXME: Access the related class to declare a variable with an instance of TaxTableTools class
+	     
 	      TaxTableTools table = new TaxTableTools();
 	      
-	      // FIXME: Call a setter method in the TaxTableClass that supplies new 
-	      //        tables for the class to work with. The method should be called
-	      //        with: table.setTables(salary, taxTable);
+	    
 	      public void table.setTables(salary, taxTable);
 	 
 	      
@@ -69,10 +67,7 @@ public class TaxTableTools {
 
 	// ***********************************************************************
 
-	// FIXME: Write a void setter method that sets new values for the private
-	// search and value tables. Name the method: setTables
-	// The method receives as parameters tables from which to load the
-	// search and value tables.
+	
 	public void setTables(String name) {
 		this.value = value;
 		this.search = search;
